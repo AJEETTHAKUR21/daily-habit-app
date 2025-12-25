@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+/* Header */
+header {
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Dashboard */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #eaeaea;
+}
+
+.container {
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  border: none;
+  background: #1e1e2f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+select {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background: #1e1e2f;
+  color: white;
+}
+button {
+  background: linear-gradient(45deg, #ff512f, #dd2476);
+  color: white;
+  font-weight: bold;
+}
+
+.card {
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+}
+
+header {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+table tr:hover {
+  background: #f2f2f2;
+}
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark header {
+  background: #000;
+}
+
+.dark .card {
+  background: #1f1f1f;
+  color: white;
+}
+
+.dark table th {
+  background: #000;
+}

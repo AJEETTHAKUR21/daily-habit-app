@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Study Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h2>📚 Study Tracker</h2>
+  <a href="index.html" style="color:white;">⬅ Back</a>
+</header>
+
+<div class="container">
+
+  <h3>Study Timer</h3>
+  <p id="timer">00:00:00</p>
+
+  <button onclick="startTimer()">Start</button>
+  <button onclick="stopTimer()">Stop</button>
+  <button onclick="resetTimer()">Reset</button>
+
+  <hr>
+
+  <h3>Daily Study Journal</h3>
+
+  <input id="topic" placeholder="Topic studied">
+  <input id="hours" placeholder="Hours studied">
+  <textarea id="notes" placeholder="Notes"></textarea>
+
+  <button onclick="saveStudy()">Save Journal</button>
+
+  <p id="msg"></p>
+
+</div>
+
+<script src="js/study.js"></script>
+</body>
+</html>

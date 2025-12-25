@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Progress Chart</title>
+</head>
+<body>
+<canvas id="chart" width="300" height="200"></canvas>
+
+<script>
+let ctx = document.getElementById("chart").getContext("2d");
+let data = [];
+
+for (let key in localStorage) {
+  if (key.startsWith("gym-")) {
+    let g = JSON.parse(localStorage.getItem(key));
+    data.push(g.weight);
+  }
+}
+
+let max = Math.max(...data);
+data.forEach((w, i) => {
+  ctx.fillRect(i * 30, 200 - (w / max) * 180, 20, (w / max) * 180);
+});
+</script>
+</body>
+</html>

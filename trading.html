@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trading Journal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h2>📈 Trading Journal</h2>
+  <a href="index.html" style="color:white;">⬅ Back</a>
+  <a href="trades-history.html">📊 View Trade History</a>
+
+</header>
+
+<div class="container">
+
+  <h3>Trade Details</h3>
+
+  <select id="mode">
+    <option value="">Select Mode</option>
+    <option>Intraday</option>
+    <option>Swing</option>
+    <option>BTST</option>
+    <option>Crypto</option>
+  </select>
+
+  <input id="entry" type="number" placeholder="Entry Price">
+  <input id="exit" type="number" placeholder="Exit Price">
+  <input id="qty" type="number" placeholder="Quantity">
+
+  <br><br>
+  <a href="pl-summary.html">💰 View P&L Summary</a>
+
+  <p><b>Profit / Loss:</b> <span id="pl">0</span></p>
+
+  <button onclick="calculatePL()">Calculate</button>
+  <button onclick="saveTrade()">Save Trade</button>
+
+  <p id="msg"></p>
+
+</div>
+
+<script src="js/trading.js"></script>
+</body>
+</html>

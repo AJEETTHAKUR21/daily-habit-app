@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gym Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h2>💪 Gym Workout Tracker</h2>
+  <a href="index.html" style="color:white;">⬅ Back</a>
+</header>
+
+<div class="container">
+
+  <h3>Select Day</h3>
+  <select id="day">
+    <option>Monday</option>
+    <option>Tuesday</option>
+    <option>Wednesday</option>
+    <option>Thursday</option>
+    <option>Friday</option>
+    <option>Saturday</option>
+    <option>Sunday</option>
+  </select>
+
+  <h3>Workout Details</h3>
+
+  <input id="exercise" placeholder="Exercise (Chest / Back / Legs)">
+  <input id="sets" type="number" placeholder="Sets">
+  <input id="reps" type="number" placeholder="Reps">
+  <input id="weight" type="number" placeholder="Weight (kg)">
+
+  <button onclick="saveWorkout()">Save Workout</button>
+
+  <p id="msg"></p>
+
+  <hr>
+
+  <a href="gym-history.html">📊 View Workout History</a>
+
+</div>
+
+<script src="js/gym.js"></script>
+</body>
+</html>
